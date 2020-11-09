@@ -74,7 +74,7 @@ form button {
   padding: 20px 40px;
   cursor: pointer;
   font-size: 25px;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 form button:hover {
