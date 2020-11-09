@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Quizz Hearthstone !</h1>
+    <form action="">
+      <div>
+        <p>Quelle est la seule classe qui a un Pouvoir Héroique a 1 mana ?</p>
+        <input type="radio" id="Paladin" name="HP" value="Paladin" />
+        <label for="Paladin">Paladin</label><br />
+        <input type="radio" id="DH" name="HP" value="DH" />
+        <label for="DH">Chasseur de démons</label><br />
+        <input type="radio" id="Demoniste" name="HP" value="Demoniste" />
+        <label for="Demoniste">Démoniste</label>
+      </div>
+      <div>
+        <p>Quel est le coût de la carte "Tir Meurtrier" ?</p>
+        <input type="radio" id="mana2" name="tirMeurtrier" value="mana2" />
+        <label for="mana2">2 Mana</label><br />
+        <input type="radio" id="mana3" name="tirMeurtrier" value="mana3" />
+        <label for="mana3">3 Mana</label><br />
+        <input type="radio" id="mana4" name="tirMeurtrier" value="mana4" />
+        <label for="mana4">4 Mana</label>
+      </div>
+      <div>
+        <p>Combien y a t-il de classe dans Hearthstone ?</p>
+        <input type="radio" id="rep1" name="nbrClasse" value="classe9" />
+        <label for="rep1">9</label><br />
+        <input type="radio" id="rep2" name="nbrClasse" value="classe10" />
+        <label for="rep2">10</label><br />
+        <input type="radio" id="rep3" name="nbrClasse" value="classe12" />
+        <label for="rep3">12</label>
+      </div>
+      <div>
+        <p>Qui est Oliech ?</p>
+        <input type="radio" id="heros" name="oliech" value="heros" />
+        <label for="heros">Le nom du héros voleur</label><br />
+        <input type="radio" id="dev" name="oliech" value="dev" />
+        <label for="dev">Un développeur du jeu</label><br />
+        <input type="radio" id="streameur" name="oliech" value="streameur" />
+        <label for="streameur">Un streameur</label>
+      </div>
+      <div>
+        <p>Laquel de ses classes n'a pas de secrets ?</p>
+        <input type="radio" id="chaman" name="secrets" value="chaman" />
+        <label for="chaman">Chaman</label><br />
+        <input type="radio" id="mage" name="secrets" value="mage" />
+        <label for="mage">Mage</label><br />
+        <input type="radio" id="voleur" name="secrets" value="voleur" />
+        <label for="voleur">Voleur</label>
+      </div>
+      <input type="submit" value="Validez vos choix !" id="envoyer" />
+    </form>
+    <div id="fond">Cliquer sur valider pour voir les résultats.</div>
+    <script src="app.js"></script>
+  </body>
+</html>
