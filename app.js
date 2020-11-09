@@ -34,9 +34,10 @@ let verifFunc = (tabAverifier) => {
     }
   }
   afficherResultats(verifTableau);
+  colorisation(verifTableau);
   verifTableau = [];
 };
-
+//Affichage des résultats en bas du questionnaire
 let afficherResultats = (tabCheck) => {
   let nbrFautes = tabCheck.filter((el) => el == false).length;
   switch (nbrFautes) {
@@ -70,9 +71,28 @@ let afficherResultats = (tabCheck) => {
       aideResultat.innerText = "Retentez une autre réponse dans les cases rouges, puis re-validez !";
       noteResultat.innerText = "0/5";
       break;
-  
+
     default:
       "Wops, cas innatendu.";
   }
 };
 
+let colorisation = (tabValBool) => {
+  for (let j = 0; j < toutesLesQuestions.length; j++) {
+    if (tabValBool[j]) {
+      toutesLesQuestions[j].style.background = "lightgreen";
+    } else {
+      toutesLesQuestions[j].style.background = "#ffb8b8";
+      toutesLesQuestions[j].classList.add("echec");
+      setTimeout(() => {
+        toutesLesQuestions[j].classList.remove("echec")
+      }, 1000);
+    }
+  }
+};
+
+toutesLesQuestions.forEach(item => {
+  item.addEventListener("click",()=> {
+    item.style.background = "white";
+  })
+});
